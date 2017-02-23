@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exercice 2</title>
+</head>
+<body>
+  <form>
+    <label for="nom">Votre nom  : </label><input type="text" name="nom" value="" id="nom"/>
+  </form>
+  <script>
+  // creation de ma variable text qui prend l'id nom
+  var text = document.getElementById('nom');
+  // appel la variable text et cree un evenement pour le defocus (blur) et fair fonctionner ma fonction
+  text.addEventListener('blur', function PerdLeFocus(){
+    // ue laert apparer
+    alert('Merci de votre participation');
+  })
+  </script>
+</body>
+</html>
